@@ -7,9 +7,39 @@ h1 {
 
 body{
     font-family: arial;
-    background-image: ("../public/pattern.png");
+}
+
+h3 {
+    color: coral;
 }
 
 footer h5{
     text-align: center;
 }
+
+img {
+    float: left;
+}
+
+.topnav a {
+    float: left;
+    color: rgb(84, 7, 226);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: maroon;
+    color: rgb(0, 0, 0);
+  }
+  
+  .topnav a.active {
+    background-color: darkgreen;
+    color: white;
+  }
+  
+  .topnav-right {
+    float: right;
+  }
