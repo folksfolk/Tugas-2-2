@@ -26,20 +26,34 @@
         <div>
              <h1> Kirimkan Pesan </h1>
 
-            <form action="index.html">
-                <label for="nama"> Nama: </label><br>
-                <input type="text" placeholder="Nama Anda" id="nama"><br>
-                <label for="email"> Email: </label><br>
-                <input type="text" placeholder="Email Anda" id="email"><br>
-                
-                <label> Jenis Kelamin: </label><br>
-                <input type="radio" name="gender" value="0"> Laki-Laki <br>
-                <input type="radio" name="gender" value="1"> Perempuan <br>
-                <br>
-                
-                <label for=""> Pesan Anda </label>
-                <textarea cols="100" rows="10"></textarea><br>
-                <input type="reset" value="Kirim">
+            <form action="index.html" method="POST">
+                <table cellspacing="4" cellpadding="4">
+                    <tr>
+                        <td><strong> Nama </strong></td>
+                        <td><input type="text" name="nama" size="30" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong> Email </strong></td>
+                        <td><input type="text" name="email" size="30" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Jenis Kelamin</strong></td>
+                        <td>
+                            <input type="radio" name="jk" value="Laki-Laki" >Laki-Laki
+                            <input type="radio" name="jk" value="Perempuan" >Perempuan
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td valign="bottom"><strong>Pesan Anda</strong></td>
+                        <td><textarea name="resume"rows="20" cols="60"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" name="kirim" value="kirim" /></td>
+                    </tr>
+                </table>
             </form>
         </div>
         <br>
